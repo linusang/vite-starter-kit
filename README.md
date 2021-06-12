@@ -12,12 +12,13 @@ Uses the additional following libraries:
 
 ### For Testing
 
-- Jest to test business logic
-- Cypress to test UI/Component
+- Jest to test business logic (use `npm run jest`)
+- Cypress to test UI/Component (use `npm run cypress` and use `npm run cypress-ci` to run in CI environment)
 
 ### For CSS
 
 - Uses Tailwind CSS because of this [article](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/)
+- Makes use of [JIT feature](https://www.youtube.com/watch?v=3O_3X7InOw8)
 
 ## Recommended IDE Setup
 
