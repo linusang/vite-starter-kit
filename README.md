@@ -9,6 +9,7 @@ Uses the additional following libraries:
 1. [Tailwind CSS](https://tailwindcss.com/)
 2. [Jest](https://jestjs.io/)
 3. [Cypress](https://www.cypress.io/)
+4. [Prettier](https://prettier.io/) (auto-formats when save in VS Code)
 
 ### For Testing
 
