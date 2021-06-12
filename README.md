@@ -1,6 +1,23 @@
-# Vue 3 + Typescript + Vite
+# Vue 3 + Typescript + Vite + TailwindCSS + Jest + Cypress
 
 This template should help get you started developing with Vue 3 and Typescript in Vite.
+
+### Opinionated Starter Kit
+
+Uses the additional following libraries:
+
+1. [Tailwind CSS](https://tailwindcss.com/)
+2. [Jest](https://jestjs.io/)
+3. [Cypress](https://www.cypress.io/)
+
+### For Testing
+
+- Jest to test business logic
+- Cypress to test UI/Component
+
+### For CSS
+
+- Uses Tailwind CSS because of this [article](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/)
 
 ## Recommended IDE Setup
 
@@ -25,20 +42,3 @@ Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 3. Open `src/main.ts` in VSCode
 4. Open the VSCode command palette
 5. Search and run "Select TypeScript version" -> "Use workspace version"
-
-### Opinionated Starter Kit
-
-Uses the additional following libraries:
-
-1. [Tailwind CSS](https://tailwindcss.com/)
-2. [Jest](https://jestjs.io/)
-3. [Cypress](https://www.cypress.io/)
-
-### For Testing
-
-- Jest to test business logic
-- Cypress to test UI/Component
-
-### For CSS
-
-- Uses Tailwind CSS because of this [article](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/)
