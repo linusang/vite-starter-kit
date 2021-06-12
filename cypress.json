@@ -1,0 +1,4 @@
+{
+    "testFiles": "**/*.uispec.ts",
+    "componentFolder": "src"
+}
