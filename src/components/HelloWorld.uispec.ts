@@ -1,27 +1,26 @@
 import { mount } from "@cypress/vue";
 import HelloWorld from "./HelloWorld.vue";
+import "../App.css";
 
 describe("HelloWorld", () => {
-  it("should display header text", () => {
-    const msg = "Hello Cypress";
+  const msg = "Hello Cypress";
+
+  beforeEach(() => {
     mount(HelloWorld, {
       props: {
         msg,
       },
     });
+  });
 
+  it("should display header text", () => {
     cy.get("h1").contains(msg);
   });
+
+  it("should increment when button is pressed", () => {
+    const button = cy.get("button[type=button]");
+    button.click();
+    button.click();
+    button.contains("count is: 2");
+  });
 });
-
-// import { mount } from "@vue/test-utils";
-// import HelloWorld from "./HelloWorld.vue";
-
-// describe("HelloWorld", () => {
-//   it("should display header text", () => {
-//     const msg = "Hello Vue 3";
-//     const wrapper = mount(HelloWorld, { props: { msg } });
-
-//     expect(wrapper.find("h1").text()).toEqual(msg);
-//   });
-// });

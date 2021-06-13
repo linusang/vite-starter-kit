@@ -6,11 +6,17 @@
         <h1 class="text-3xl font-semibold">{{ msg }}</h1>
         <p>See <code>README.md</code> for more information.</p>
         <p>
-          <a href="https://vitejs.dev/guide/features.html" target="_blank">
+          <a
+            href="https://vitejs.dev/guide/features.html"
+            target="_blank"
+            class="text-[#42b983]"
+          >
             Vite Docs
           </a>
           |
-          <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
+          <a href="https://v3.vuejs.org/" target="_blank" class="text-[#42b983]"
+            >Vue 3 Docs</a
+          >
         </p>
         <button
           type="button"
@@ -21,7 +27,10 @@
         </button>
         <p>
           Edit
-          <code>components/HelloWorld.vue</code> to test hot module replacement.
+          <code class="bg-gray-100 rounded text-[#304455] px-2 py-1"
+            >components/HelloWorld.vue</code
+          >
+          to test hot module replacement.
         </p>
       </div>
     </div>
@@ -44,21 +53,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style scoped>
-a {
-  color: #42b983;
-}
-
-label {
-  margin: 0 0.5em;
-  font-weight: bold;
-}
-
-code {
-  background-color: #eee;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: #304455;
-}
-</style>
