@@ -1,9 +1,11 @@
 <template>
   <div class="h-screen flex items-center justify-center">
     <div class="text-center">
-      <img alt="Vue logo" src="../assets/logo.png" class="mx-auto" />
+      <img alt="Vue logo" src="@/assets/logo.png" class="mx-auto" />
       <div class="space-y-5">
-        <h1 class="text-3xl font-semibold">{{ msg }}</h1>
+        <h1 class="text-3xl font-semibold">
+          {{ msg }} <span v-if="isMsgNullOrEmpty">msg is null or empty!</span>
+        </h1>
         <p>See <code>README.md</code> for more information.</p>
         <p>
           <a
@@ -38,7 +40,8 @@
 </template>
 
 <script lang="ts">
-import { ref, defineComponent } from "vue";
+import { ref, defineComponent, computed } from "vue";
+import { isNullOrEmpty } from "@/share/stringHelpers";
 export default defineComponent({
   name: "HelloWorld",
   props: {
@@ -47,9 +50,10 @@ export default defineComponent({
       required: true,
     },
   },
-  setup: () => {
+  setup(props) {
     const count = ref(0);
-    return { count };
+    const isMsgNullOrEmpty = computed(() => isNullOrEmpty(props.msg));
+    return { count, isMsgNullOrEmpty };
   },
 });
 </script>
