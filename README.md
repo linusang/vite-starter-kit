@@ -6,9 +6,9 @@ This template should help get you started developing with Vue 3 and Typescript i
 
 Uses the additional following libraries:
 
-1. [Tailwind CSS](https://tailwindcss.com/)
-2. [Jest](https://jestjs.io/)
-3. [Cypress](https://www.cypress.io/)
+1. [Tailwind CSS](https://tailwindcss.com/) (because utility-CSS scales better)
+2. [Jest](https://jestjs.io/) (because JEST is popular?)
+3. [Cypress](https://www.cypress.io/) (because UI Component-testing rox!)
 4. [Prettier](https://prettier.io/) (auto-formats when save in VS Code)
 
 ### For Testing
