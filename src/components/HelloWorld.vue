@@ -39,21 +39,14 @@
   </div>
 </template>
 
-<script lang="ts">
-import { ref, defineComponent, computed } from "vue";
+<script lang="ts" setup>
+import { ref, computed } from "vue";
 import { isNullOrEmpty } from "@/share/stringHelpers";
-export default defineComponent({
-  name: "HelloWorld",
-  props: {
-    msg: {
-      type: String,
-      required: true,
-    },
-  },
-  setup(props) {
-    const count = ref(0);
-    const isMsgNullOrEmpty = computed(() => isNullOrEmpty(props.msg));
-    return { count, isMsgNullOrEmpty };
-  },
-});
+
+const props = defineProps<{
+  msg: string;
+}>();
+
+const count = ref(0);
+const isMsgNullOrEmpty = computed(() => isNullOrEmpty(props.msg));
 </script>
