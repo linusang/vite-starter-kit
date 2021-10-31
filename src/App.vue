@@ -1,9 +1,9 @@
 <template>
   <HelloWorld
-    msg="Hello Vue 3 + TypeScript + Vite + Tailwind + Jest + Cypress"
+    msg="Hello Vue 3 + TypeScript + Vite + Tailwind + Jest + Cypress + ESLint + Prettier"
   />
 </template>
 
 <script lang="ts" setup>
-import HelloWorld from "./components/HelloWorld.vue";
+  import HelloWorld from "./components/HelloWorld.vue";
 </script>

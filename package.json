@@ -7,7 +7,8 @@
     "jest": "jest src",
     "cypress": "cypress open-ct",
     "cypress-ci": "cypress run-ct",
-    "prettier": "npx prettier --write ."
+    "prettier": "npx prettier --write .",
+    "lint": "eslint --ext .ts,vue --ignore-path .gitignore ."
   },
   "dependencies": {
     "vue": "^3.2.11"
@@ -16,14 +17,21 @@
     "@cypress/vite-dev-server": "^2.1.0",
     "@cypress/vue": "^3.0.3",
     "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.2.0",
+    "@typescript-eslint/parser": "^5.2.0",
     "@vitejs/plugin-vue": "^1.6.2",
     "@vue/compiler-sfc": "^3.2.11",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^9.0.0",
     "@vue/test-utils": "^2.0.0-rc.14",
     "autoprefixer": "^10.2.6",
     "cypress": "^7.5.0",
+    "eslint": "^8.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3",
     "jest": "^26.6.3",
     "postcss": "^8.3.2",
-    "prettier": "^2.3.1",
+    "prettier": "^2.4.1",
     "tailwindcss": "^2.1.4",
     "ts-jest": "^26.5.6",
     "typescript": "^4.3.2",

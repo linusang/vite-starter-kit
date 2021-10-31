@@ -22,8 +22,8 @@
         </p>
         <button
           type="button"
-          @click="count++"
           class="border p-3 rounded shadow-md bg-gray-300 border-gray-600"
+          @click="count++"
         >
           count is: {{ count }}
         </button>
@@ -40,13 +40,14 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, computed } from "vue";
-import { isNullOrEmpty } from "@/share/stringHelpers";
+  import { ref, computed } from "vue";
+  import { isNullOrEmpty } from "@/share/stringHelpers";
+  type Props = {
+    msg: string;
+  };
 
-const props = defineProps<{
-  msg: string;
-}>();
+  const props = defineProps<Props>();
 
-const count = ref(0);
-const isMsgNullOrEmpty = computed(() => isNullOrEmpty(props.msg));
+  const count = ref(0);
+  const isMsgNullOrEmpty = computed(() => isNullOrEmpty(props.msg));
 </script>
