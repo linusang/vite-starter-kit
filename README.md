@@ -1,4 +1,4 @@
-# Vue 3 + Typescript + Vite + TailwindCSS + Jest + Cypress
+# Vue 3 + Typescript + Vite + TailwindCSS + Jest + Cypress + ESLint + Prettier
 
 This template should help get you started developing with Vue 3 and Typescript in Vite.
 
@@ -10,6 +10,7 @@ Uses the additional following libraries:
 2. [Jest](https://jestjs.io/) (because JEST is popular?)
 3. [Cypress](https://www.cypress.io/) (because UI Component-testing rox!)
 4. [Prettier](https://prettier.io/) (auto-formats when save in VS Code)
+5. [ESLint](https://eslint.org/) (Fix problems in your TypeScript Code)
 
 ### For Testing
 
