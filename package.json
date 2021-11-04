@@ -1,8 +1,9 @@
 {
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite --port 3333",
-    "build": "vite build",
+    "dev": "vite --port 3333 --host",
+    "compile": "vue-tsc --noEmit",
+    "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "jest": "jest src",
     "cypress": "cypress open-ct",
