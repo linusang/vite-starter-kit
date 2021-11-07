@@ -23,7 +23,7 @@
         <button
           type="button"
           class="border p-3 rounded shadow-md bg-gray-300 border-gray-600"
-          @click="count++"
+          @click="countClicked"
         >
           count is: {{ count }}
         </button>
@@ -47,7 +47,13 @@
   };
 
   const props = defineProps<Props>();
+  const emit = defineEmits(["count-incremented"]);
 
   const count = ref(0);
   const isMsgNullOrEmpty = computed(() => isNullOrEmpty(props.msg));
+
+  function countClicked() {
+    count.value++;
+    emit("count-incremented");
+  }
 </script>
