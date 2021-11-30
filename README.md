@@ -12,6 +12,23 @@ Uses the additional following libraries:
 4. [Prettier](https://prettier.io/) (auto-formats when save in VS Code)
 5. [ESLint](https://eslint.org/) (Fix problems in your TypeScript Code)
 
+### Getting Started
+
+Navigate to your desired folder to save the files
+and execute the following commands:
+
+```
+git clone https://github.com/linusang/vite-starter-kit.git vite-starter-kit
+
+cd vite-starter-kit
+
+rm -r .git
+
+git init
+
+code .
+```
+
 ### For Testing
 
 - Jest to test business logic (use `npm run jest`)
@@ -24,14 +41,8 @@ Uses the additional following libraries:
 
 ## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar).
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 
 ### If Using `<script setup>`
 
-[`<script setup>`](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) is a syntactic-sugar feature. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
-
-## Type Support For `.vue` Imports in TS
-
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
-
-Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
+[`<script setup>`](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) is a syntactic-sugar feature. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) .
