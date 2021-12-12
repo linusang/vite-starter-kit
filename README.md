@@ -14,17 +14,25 @@ Uses the additional following libraries:
 
 ### Getting Started
 
+Make sure you have [git](https://git-scm.com/) and [node](https://nodejs.org/) installed.
+
 Navigate to your desired folder to save the files
 and execute the following commands:
 
 ```
-git clone https://github.com/linusang/vite-starter-kit.git vite-starter-kit
+git clone https://github.com/linusang/vite-starter-kit.git .
 
-cd vite-starter-kit
-
+// mac
 rm -r .git
 
+// windows
+rmdir /s .git
+
 git init
+
+npm install
+
+npm run dev
 
 code .
 ```
