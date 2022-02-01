@@ -4,4 +4,5 @@ module.exports = {
     "^.+\\.ts$": "ts-jest",
     "^.+\\.vue$": "vue-jest",
   },
+  testPathIgnorePatterns: ["<rootDir>/cypress"],
 };
