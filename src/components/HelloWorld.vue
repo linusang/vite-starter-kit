@@ -1,3 +1,28 @@
+<script lang="ts" setup>
+  import { ref, computed } from "vue";
+  import { isNullOrEmpty } from "@/share/stringHelpers";
+  interface Props {
+    msg: string;
+  }
+
+  interface Events {
+    (e: "count-incremented", value: number): void;
+  }
+
+  const props = withDefaults(defineProps<Props>(), {
+    msg: "this is the default message",
+  });
+  const emit = defineEmits<Events>();
+
+  const count = ref(0);
+  const isMsgNullOrEmpty = computed(() => isNullOrEmpty(props.msg));
+
+  function countClicked() {
+    count.value++;
+    emit("count-incremented", count.value);
+  }
+</script>
+
 <template>
   <div class="flex h-screen items-center justify-center">
     <div class="text-center">
@@ -38,22 +63,3 @@
     </div>
   </div>
 </template>
-
-<script lang="ts" setup>
-  import { ref, computed } from "vue";
-  import { isNullOrEmpty } from "@/share/stringHelpers";
-  type Props = {
-    msg: string;
-  };
-
-  const props = defineProps<Props>();
-  const emit = defineEmits(["count-incremented"]);
-
-  const count = ref(0);
-  const isMsgNullOrEmpty = computed(() => isNullOrEmpty(props.msg));
-
-  function countClicked() {
-    count.value++;
-    emit("count-incremented");
-  }
-</script>

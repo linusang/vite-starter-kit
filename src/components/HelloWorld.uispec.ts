@@ -3,24 +3,35 @@ import HelloWorld from "./HelloWorld.vue";
 import "../App.css";
 
 describe("HelloWorld", () => {
-  const msg = "Hello Cypress";
+  describe("with no specified message", () => {
+    beforeEach(() => {
+      mount(HelloWorld);
+    });
 
-  beforeEach(() => {
-    mount(HelloWorld, {
-      props: {
-        msg,
-      },
+    it("should display default message", () => {
+      cy.get("h1").contains("this is the default message");
     });
   });
+  describe("with specified message", () => {
+    const msg = "Hello Cypress";
 
-  it("should display header text", () => {
-    cy.get("h1").contains(msg);
-  });
+    beforeEach(() => {
+      mount(HelloWorld, {
+        props: {
+          msg,
+        },
+      });
+    });
 
-  it("should increment when button is pressed", () => {
-    const button = cy.get("button[type=button]");
-    button.click();
-    button.click();
-    button.contains("count is: 2");
+    it("should display header text", () => {
+      cy.get("h1").contains(msg);
+    });
+
+    it("should increment when button is pressed", () => {
+      const button = cy.get("button[type=button]");
+      button.click();
+      button.click();
+      button.contains("count is: 2");
+    });
   });
 });
