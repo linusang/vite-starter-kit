@@ -1,6 +1,7 @@
 <script lang="ts" setup>
-  import { ref, computed } from "vue";
+  import { computed } from "vue";
   import { isNullOrEmpty } from "@/share/stringHelpers";
+  import { $ref } from "vue/macros";
   interface Props {
     msg: string;
   }
@@ -14,12 +15,12 @@
   });
   const emit = defineEmits<Events>();
 
-  const count = ref(0);
+  let count = $ref(0);
   const isMsgNullOrEmpty = computed(() => isNullOrEmpty(props.msg));
 
   function countClicked() {
-    count.value++;
-    emit("count-incremented", count.value);
+    count++;
+    emit("count-incremented", count);
   }
 </script>
 
