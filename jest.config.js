@@ -1,7 +1,7 @@
 module.exports = {
   moduleFileExtensions: ["js", "ts", "json", "vue"],
   transform: {
-    "^.+\\.ts$": "ts-jest",
+    "^.+\\.ts$": "esbuild-jest",
     "^.+\\.vue$": "vue-jest",
   },
   testPathIgnorePatterns: ["<rootDir>/cypress"],
