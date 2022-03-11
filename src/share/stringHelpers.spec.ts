@@ -1,5 +1,5 @@
 import { isNullOrEmpty } from "./stringHelpers";
-import { expect, describe, test } from "@jest/globals";
+import { expect, describe, test } from "vitest";
 
 describe("testing isNullOrEmpty()", () => {
   test("should return true if null", () => {
