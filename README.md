@@ -1,4 +1,4 @@
-# Vue 3 + Typescript + Vite + TailwindCSS + Jest + Cypress + ESLint + Prettier
+# Vue 3 + Typescript + Vite + TailwindCSS + Vitest + Cypress + ESLint + Prettier
 
 This template should help get you started developing with Vue 3 and Typescript in Vite.
 
