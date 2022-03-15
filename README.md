@@ -7,7 +7,7 @@ This template should help get you started developing with Vue 3 and Typescript i
 Uses the additional following libraries:
 
 1. [Tailwind CSS](https://tailwindcss.com/) (because utility-CSS scales better)
-2. [Vitest](https://vitest.dev/) (because running tests are fast)
+2. [Vitest](https://vitest.dev/) (because running tests should be fast)
 3. [Cypress](https://www.cypress.io/) (because UI Component-testing rox!)
 4. [Prettier](https://prettier.io/) (auto-formats when save in VS Code)
 5. [ESLint](https://eslint.org/) (Fix problems in your TypeScript Code)
