@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-namespace */
 // ***********************************************************
 // This example support/index.js is processed and
 // loaded automatically before your test files.
@@ -18,3 +19,19 @@ import "./commands";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+declare global {
+  namespace Cypress {
+    interface Chainable {
+      /**
+       * a helper method to simulate clicking outside of the element
+       */
+      clickOutside(): Chainable<JQuery<HTMLBodyElement>>;
+      /**
+       * this is an alias method to cy.get(`[data-ui=${value}]`)
+       * @param value the value of "data-ui" attribute in DOM
+       */
+      getDataUi(value: string): Chainable<JQuery<HTMLElement>>;
+    }
+  }
+}

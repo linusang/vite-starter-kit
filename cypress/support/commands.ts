@@ -23,3 +23,17 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add(
+  "clickOutside",
+  (): Cypress.Chainable<JQuery<HTMLBodyElement>> => {
+    return cy.get("body").click(0, 0);
+  }
+);
+
+Cypress.Commands.add(
+  "getDataUi",
+  (value): Cypress.Chainable<JQuery<HTMLElement>> => {
+    return cy.get(`[data-ui=${value}]`);
+  }
+);

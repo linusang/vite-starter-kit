@@ -28,10 +28,7 @@ describe("HelloWorld", () => {
     });
 
     it("should increment when button is pressed", () => {
-      const button = cy.get("button[type=button]");
-      button.click();
-      button.click();
-      button.contains("count is: 2");
+      cy.getDataUi("btn-increment").click().click().contains("count is: 2");
     });
   });
 });

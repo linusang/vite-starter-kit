@@ -49,6 +49,7 @@
         <button
           type="button"
           class="rounded border border-gray-600 bg-gray-300 p-3 shadow-md"
+          data-ui="btn-increment"
           @click="countClicked"
         >
           count is: {{ count }}
