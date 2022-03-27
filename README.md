@@ -20,21 +20,16 @@ Navigate to your desired folder to save the files
 and execute the following commands:
 
 ```
-git clone https://github.com/linusang/vite-starter-kit.git .
+npx degit https://github.com/linusang/vite-starter-kit.git
 
-// mac
-rm -r .git
-
-// windows
-rmdir /s .git
-
-git init
+// say yes if prompted
 
 npm install
 
 npm run dev
 
-code .
+// open browser and navigate to http://localhost:3333
+
 ```
 
 ### For Testing
