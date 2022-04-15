@@ -26,9 +26,17 @@ npx degit https://github.com/linusang/vite-starter-kit.git
 
 npm install
 
+// if you use git
+
+git init
+
+// running the app
+
 npm run dev
 
 // open browser and navigate to http://localhost:3333
+
+
 
 ```
 
