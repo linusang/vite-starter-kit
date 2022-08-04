@@ -1,6 +1,8 @@
-import { mount } from "@cypress/vue";
-import HelloWorld from "./HelloWorld.vue";
 import "../App.css";
+
+import { mount } from "@cypress/vue";
+
+import HelloWorld from "./HelloWorld.vue";
 
 describe("HelloWorld", () => {
   describe("with no specified message", () => {

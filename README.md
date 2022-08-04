@@ -11,6 +11,7 @@ Uses the additional following libraries:
 3. [Cypress](https://www.cypress.io/) (because UI Component-testing rox!)
 4. [Prettier](https://prettier.io/) (auto-formats when save in VS Code)
 5. [ESLint](https://eslint.org/) (Fix problems in your TypeScript Code)
+6. [simple-import-sort](https://github.com/lydell/eslint-plugin-simple-import-sort) (Sort import statements)
 
 ### Getting Started
 

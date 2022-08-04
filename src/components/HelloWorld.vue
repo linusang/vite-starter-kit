@@ -1,7 +1,8 @@
 <script lang="ts" setup>
   import { computed } from "vue";
-  import { isNullOrEmpty } from "@/share/stringHelpers";
   import { $ref } from "vue/macros";
+
+  import { isNullOrEmpty } from "@/share/stringHelpers";
   interface Props {
     msg: string;
   }

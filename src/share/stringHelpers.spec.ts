@@ -1,5 +1,6 @@
+import { describe, expect, test } from "vitest";
+
 import { isNullOrEmpty } from "./stringHelpers";
-import { expect, describe, test } from "vitest";
 
 describe("testing isNullOrEmpty()", () => {
   test("should return true if null", () => {
