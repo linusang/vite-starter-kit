@@ -6,16 +6,21 @@
     msg: string;
   }
 
-  interface Events {
+  interface Emits {
     (e: "count-incremented", value: number): void;
+  }
+
+  interface Slots {
+    default(props: { count: number }): any;
   }
 
   const props = withDefaults(defineProps<Props>(), {
     msg: "this is the default message",
   });
-  const emit = defineEmits<Events>();
+  const emit = defineEmits<Emits>();
+  defineSlots<Slots>();
 
-  let count = ref(0);
+  const count = ref(0);
   const isMsgNullOrEmpty = computed(() => isNullOrEmpty(props.msg));
 
   function countClicked() {
@@ -61,6 +66,7 @@
           >
           to test hot module replacement.
         </p>
+        <slot :count="count" />
       </div>
     </div>
   </div>
