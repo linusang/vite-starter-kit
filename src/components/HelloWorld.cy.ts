@@ -1,13 +1,11 @@
 import "../App.css";
 
-import { mount } from "@cypress/vue";
-
 import HelloWorld from "./HelloWorld.vue";
 
 describe("HelloWorld", () => {
   describe("with no specified message", () => {
     beforeEach(() => {
-      mount(HelloWorld);
+      cy.mount(HelloWorld);
     });
 
     it("should display default message", () => {
@@ -18,7 +16,7 @@ describe("HelloWorld", () => {
     const msg = "Hello Cypress";
 
     beforeEach(() => {
-      mount(HelloWorld, {
+      cy.mount(HelloWorld, {
         props: {
           msg,
         },
