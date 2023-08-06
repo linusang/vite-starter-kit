@@ -55,6 +55,13 @@ npm run dev
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 
+## Icons
+
+1. Go to [icones.js.org](https://icones.js.org/).
+2. Select a collection, then do `npm install @iconify-json/[collection id]` if you don't have the collection installed.
+3. Import in Vue file, eg: `import HeroiconsRocketLaunchSolid from '~icons/heroicons/rocket-launch-solid'`
+4. In template, use `<HeroiconsRocketLaunchSolid/>`
+
 ### If Using `<script setup>`
 
 [`<script setup>`](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) is a syntactic-sugar feature. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) .

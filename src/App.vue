@@ -4,6 +4,6 @@
 
 <template>
   <HelloWorld
-    msg="Hello Vue 3 + TypeScript + Vite + Tailwind + Vitest + Cypress + ESLint + Prettier"
+    msg="Hello Vue 3 + TypeScript + Vite + Tailwind + Vitest + ESLint + Prettier"
   />
 </template>

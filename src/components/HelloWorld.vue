@@ -2,6 +2,8 @@
   import { computed, ref } from "vue";
 
   import { isNullOrEmpty } from "@/share/stringHelpers";
+  import SkillIconsViteLight from "~icons/skill-icons/vite-light";
+  import SkillIconsVuejsLight from "~icons/skill-icons/vuejs-light";
   interface Props {
     msg: string;
   }
@@ -44,12 +46,12 @@
             target="_blank"
             class="text-[#42b983]"
           >
-            Vite Docs
+            Vite Docs <SkillIconsViteLight class="inline-block" />
           </a>
           |
           <a href="https://v3.vuejs.org/" target="_blank" class="text-[#42b983]"
-            >Vue 3 Docs</a
-          >
+            >Vue 3 Docs <SkillIconsVuejsLight class="inline-block"
+          /></a>
         </p>
         <button
           type="button"
