@@ -8,10 +8,10 @@ Uses the additional following libraries:
 
 1. [Tailwind CSS](https://tailwindcss.com/) (because utility-CSS scales better)
 2. [Vitest](https://vitest.dev/) (because running tests should be fast)
-3. [Cypress](https://www.cypress.io/) (because UI Component-testing rox!)
-4. [Prettier](https://prettier.io/) (auto-formats when save in VS Code)
-5. [ESLint](https://eslint.org/) (Fix problems in your TypeScript Code)
-6. [simple-import-sort](https://github.com/lydell/eslint-plugin-simple-import-sort) (Sort import statements)
+3. [Prettier](https://prettier.io/) (auto-formats when save in VS Code)
+4. [ESLint](https://eslint.org/) (Fix problems in your TypeScript Code)
+5. [simple-import-sort](https://github.com/lydell/eslint-plugin-simple-import-sort) (Sort import statements)
+6. [unplugin-icons](https://github.com/antfu/unplugin-icons) (iconify: the definitive icon library)
 
 ### Getting Started
 
