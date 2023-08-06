@@ -1,4 +1,4 @@
-# Vue 3 + Typescript + Vite + TailwindCSS + Vitest + Cypress + ESLint + Prettier
+# Vue 3 + Typescript + Vite + TailwindCSS + Vitest + ESLint + Prettier
 
 This template should help get you started developing with Vue 3 and Typescript in Vite.
 
@@ -44,7 +44,6 @@ npm run dev
 ### For Testing
 
 - Vitest to test business logic (use `npm run vitest`)
-- Cypress to test UI/Component (use `npm run cypress` and use `npm run cypress-ci` to run in CI environment)
 
 ### For CSS
 
