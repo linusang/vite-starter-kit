@@ -37,9 +37,13 @@ npm run dev
 
 // open browser and navigate to http://localhost:3333
 
-
-
 ```
+
+### Run in the browser
+
+Don't want to clone to your desktop? Just run in the browser!
+
+https://stackblitz.com/github/linusang/vite-starter-kit
 
 ### For Testing
 
