@@ -65,6 +65,6 @@ https://stackblitz.com/github/linusang/vite-starter-kit
 3. Import in Vue file, eg: `import HeroiconsRocketLaunchSolid from '~icons/heroicons/rocket-launch-solid'`
 4. In template, use `<HeroiconsRocketLaunchSolid/>`
 
-### If Using `<script setup>`
+# Updating dependencies
 
-[`<script setup>`](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) is a syntactic-sugar feature. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) .
+If you need to install the latest dependencies you can run `npx taze` to check which npm packages are outdated. Then run `npx taze -w` if you are sure that the minor versions can be overwritten in package.json. Thereafter, run `npm install` to install the latest packages.
