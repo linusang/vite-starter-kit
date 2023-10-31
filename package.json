@@ -1,11 +1,11 @@
 {
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite --port 3333 --host",
+    "dev": "bunx --bun vite --port 3333 --host",
     "typecheck": "vue-tsc --noEmit",
-    "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview --host",
-    "prettier": "npx prettier --write .",
+    "build": "vue-tsc --noEmit && bunx --bun vite build",
+    "serve": "bunx --bun vite preview --host",
+    "prettier": "bunx prettier --write .",
     "lint": "eslint --ext .ts,vue --ignore-path .gitignore .",
     "vitest": "vitest run",
     "vitest:watch": "vitest"

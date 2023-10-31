@@ -68,3 +68,32 @@ https://stackblitz.com/github/linusang/vite-starter-kit
 # Updating dependencies
 
 If you need to install the latest dependencies you can run `npx taze` to check which npm packages are outdated. Then run `npx taze -w` if you are sure that the minor versions can be overwritten in package.json. Thereafter, run `npm install` to install the latest packages.
+
+# Using with `bun`
+
+Make sure you have [bun](https://bun.sh/) installed.
+
+```bash
+# point to bun install directory
+
+export BUN_INSTALL="$HOME/.bun"
+
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+bunx degit https://github.com/linusang/vite-starter-kit.git#bun
+
+# say yes if prompted
+
+bun install
+
+# if you use git
+
+git init
+
+# running the app
+
+bun run dev
+
+# open browser and navigate to http://localhost:3333
+
+```
