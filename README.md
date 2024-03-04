@@ -77,7 +77,6 @@ Make sure you have [bun](https://bun.sh/) installed.
 # point to bun install directory
 
 export BUN_INSTALL="$HOME/.bun"
-
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 bunx degit https://github.com/linusang/vite-starter-kit.git#bun
