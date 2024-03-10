@@ -32,7 +32,7 @@
 </script>
 
 <template>
-  <div class="flex h-screen items-center justify-center">
+  <div class="@container flex h-screen items-center justify-center">
     <div class="text-center">
       <img alt="Vue logo" src="@/assets/logo.png" class="mx-auto" />
       <div class="space-y-5">
@@ -69,6 +69,10 @@
           to test hot module replacement.
         </p>
         <slot :count="count" />
+
+        <div class="@lg:bg-white bg-green-300">
+          Container Query: (reduce viewport width <512px to turn green)
+        </div>
       </div>
     </div>
   </div>
