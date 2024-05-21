@@ -4,6 +4,7 @@
   import { isNullOrEmpty } from "@/share/stringHelpers";
   import SkillIconsViteLight from "~icons/skill-icons/vite-light";
   import SkillIconsVuejsLight from "~icons/skill-icons/vuejs-light";
+
   interface Props {
     msg: string;
   }
@@ -13,7 +14,7 @@
   }
 
   interface Slots {
-    default(props: { count: number }): any;
+    default: [{ count: number }];
   }
 
   const props = withDefaults(defineProps<Props>(), {
@@ -32,7 +33,7 @@
 </script>
 
 <template>
-  <div class="@container flex h-screen items-center justify-center">
+  <div class="flex h-screen items-center justify-center @container">
     <div class="text-center">
       <img alt="Vue logo" src="@/assets/logo.png" class="mx-auto" />
       <div class="space-y-5">
@@ -70,8 +71,8 @@
         </p>
         <slot :count="count" />
 
-        <div class="@lg:bg-white bg-green-300">
-          Container Query: (reduce viewport width <512px to turn green)
+        <div class="bg-green-300 @lg:bg-white">
+          Container Query: (reduce viewport width &lt;512px to turn green)
         </div>
       </div>
     </div>
