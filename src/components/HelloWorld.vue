@@ -13,7 +13,7 @@
   }
 
   interface Slots {
-    default(props: { count: number }): any;
+    default: [{ count: number }];
   }
 
   const props = withDefaults(defineProps<Props>(), {
@@ -71,7 +71,7 @@
         <slot :count="count" />
 
         <div class="bg-green-300 @lg:bg-white">
-          Container Query: (reduce viewport width <512px to turn green)
+          Container Query: (reduce viewport width &lt;512px to turn green)
         </div>
       </div>
     </div>
