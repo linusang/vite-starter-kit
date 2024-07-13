@@ -4,26 +4,34 @@
     "browser": true,
     "es2021": true,
     "node": true,
-    "vue/setup-compiler-macros": true
+    "vue/setup-compiler-macros": true,
   },
   "extends": [
     "plugin:vue/vue3-recommended",
     "eslint:recommended",
     "@vue/typescript/recommended",
-    "@vue/prettier"
+    "@vue/prettier",
   ],
   "parserOptions": {
-    "ecmaVersion": 2021
+    "ecmaVersion": 2021,
+    "project": "./tsconfig.json",
   },
-  "plugins": ["simple-import-sort"],
+  "plugins": ["@typescript-eslint", "simple-import-sort"],
   "rules": {
     "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "@typescript-eslint/ban-ts-comment": [
       "error",
-      { "ts-ignore": "allow-with-description" }
+      { "ts-ignore": "allow-with-description" },
     ],
     "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error"
+    "simple-import-sort/exports": "error",
+    "@typescript-eslint/consistent-type-exports": "error",
+    "@typescript-eslint/consistent-type-imports": "error",
   },
-  "ignorePatterns": ["node_modules/", "dist/", "cypress/"]
+  "ignorePatterns": [
+    "node_modules/",
+    "dist/",
+    "prettier.config.js",
+    "vite.config.ts",
+  ],
 }

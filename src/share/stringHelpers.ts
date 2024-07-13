@@ -1,3 +1,5 @@
-export function isNullOrEmpty(value: string | null | undefined): boolean {
+import type { Nullable } from "./types";
+
+export function isNullOrEmpty(value: Nullable<string>): boolean {
   return !(typeof value === "string" && value.length > 0);
 }
