@@ -22,6 +22,7 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "cypress/**/*.ts"
+    "cypress/**/*.ts",
+    "vite.config.ts"
   ]
 }
