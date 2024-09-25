@@ -1,35 +1,32 @@
 <script lang="ts" setup>
-  import { computed, ref } from "vue";
+import { computed, ref } from "vue";
 
-  import { isNullOrEmpty } from "@/share/stringHelpers";
-  import SkillIconsViteLight from "~icons/skill-icons/vite-light";
-  import SkillIconsVuejsLight from "~icons/skill-icons/vuejs-light";
+import { isNullOrEmpty } from "@/share/stringHelpers";
+import SkillIconsViteLight from "~icons/skill-icons/vite-light";
+import SkillIconsVuejsLight from "~icons/skill-icons/vuejs-light";
 
-  interface Props {
-    msg: string;
-  }
+interface Props {
+  msg?: string;
+}
 
-  interface Emits {
-    (e: "count-incremented", value: number): void;
-  }
+interface Slots {
+  default: [{ count: number }];
+}
 
-  interface Slots {
-    default: [{ count: number }];
-  }
+const { msg = "this is the default message" } = defineProps<Props>();
 
-  const props = withDefaults(defineProps<Props>(), {
-    msg: "this is the default message",
-  });
-  const emit = defineEmits<Emits>();
-  defineSlots<Slots>();
+const emit = defineEmits<{
+  "count-incremented": [number];
+}>();
+defineSlots<Slots>();
 
-  const count = ref(0);
-  const isMsgNullOrEmpty = computed(() => isNullOrEmpty(props.msg));
+const count = ref(0);
+const isMsgNullOrEmpty = computed(() => isNullOrEmpty(msg));
 
-  function countClicked() {
-    count.value++;
-    emit("count-incremented", count.value);
-  }
+function countClicked() {
+  count.value++;
+  emit("count-incremented", count.value);
+}
 </script>
 
 <template>
