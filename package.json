@@ -12,6 +12,7 @@
     "vitest:watch": "vitest"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.0.0",
     "vue": "^3.5.13"
   },
   "devDependencies": {
