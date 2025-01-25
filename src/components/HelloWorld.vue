@@ -30,7 +30,7 @@ function countClicked() {
 </script>
 
 <template>
-  <div class="flex h-screen items-center justify-center @container">
+  <div class="@container flex h-screen items-center justify-center">
     <div class="text-center">
       <img alt="Vue logo" src="@/assets/logo.png" class="mx-auto" />
       <div class="space-y-5">
@@ -47,13 +47,13 @@ function countClicked() {
             Vite Docs <SkillIconsViteLight class="inline-block" />
           </a>
           |
-          <a href="https://v3.vuejs.org/" target="_blank" class="text-[#42b983]"
+          <a href="https://vuejs.org/" target="_blank" class="text-[#42b983]"
             >Vue 3 Docs <SkillIconsVuejsLight class="inline-block"
           /></a>
         </p>
         <button
           type="button"
-          class="rounded border border-gray-600 bg-gray-300 p-3 shadow-md"
+          class="rounded-sm border border-gray-600 bg-gray-300 p-3 shadow-md"
           data-ui="btn-increment"
           @click="countClicked"
         >
@@ -61,7 +61,7 @@ function countClicked() {
         </button>
         <p>
           Edit
-          <code class="rounded bg-gray-100 px-2 py-1 text-[#304455]"
+          <code class="rounded-sm bg-gray-100 px-2 py-1 text-[#304455]"
             >components/HelloWorld.vue</code
           >
           to test hot module replacement.
