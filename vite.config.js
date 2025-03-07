@@ -1,10 +1,10 @@
+import tailwindcss from "@tailwindcss/vite";
 import vue from "@vitejs/plugin-vue";
 import * as path from "path";
 import icons from "unplugin-icons/vite";
 import { fileURLToPath } from "url";
 import vueDevTools from "vite-plugin-vue-devtools";
 import { defineConfig } from "vitest/config";
-import tailwindcss from "@tailwindcss/vite";
 
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
