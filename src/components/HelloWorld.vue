@@ -4,7 +4,6 @@ import { computed, ref } from "vue";
 import { isNullOrEmpty } from "@/share/stringHelpers";
 import SkillIconsViteLight from "~icons/skill-icons/vite-light";
 import SkillIconsVuejsLight from "~icons/skill-icons/vuejs-light";
-
 interface Props {
   msg?: string;
 }
@@ -15,9 +14,7 @@ interface Slots {
 
 const { msg = "this is the default message" } = defineProps<Props>();
 
-const emit = defineEmits<{
-  "count-incremented": [number];
-}>();
+const emit = defineEmits<{ "count-incremented": [number] }>();
 defineSlots<Slots>();
 
 const count = ref(0);
