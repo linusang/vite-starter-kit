@@ -8,9 +8,9 @@ interface Props {
   msg?: string;
 }
 
-  interface Slots {
-    default: [{ count: number }];
-  }
+interface Slots {
+  default: [{ count: number }];
+}
 
 const { msg = "this is the default message" } = defineProps<Props>();
 
