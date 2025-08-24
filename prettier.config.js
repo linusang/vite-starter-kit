@@ -1,5 +1,5 @@
 export default {
-  vueIndentScriptAndStyle: true,
+  trailingComma: "es5",
   endOfLine: "auto",
   plugins: ["prettier-plugin-tailwindcss"],
 };
