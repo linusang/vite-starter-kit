@@ -1,7 +1,5 @@
 /* ./src/index.css */
-@import 'tailwindcss';
-
-@plugin '@tailwindcss/container-queries';
+@import "tailwindcss";
 
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
