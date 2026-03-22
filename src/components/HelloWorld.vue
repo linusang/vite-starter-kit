@@ -4,18 +4,16 @@ import { computed, ref } from "vue";
 import { isNullOrEmpty } from "@/share/stringHelpers";
 import SkillIconsViteLight from "~icons/skill-icons/vite-light";
 import SkillIconsVuejsLight from "~icons/skill-icons/vuejs-light";
-interface Props {
+
+const { msg = "this is the default message" } = defineProps<{
   msg?: string;
-}
-
-interface Slots {
-  default: [{ count: number }];
-}
-
-const { msg = "this is the default message" } = defineProps<Props>();
+}>();
 
 const emit = defineEmits<{ "count-incremented": [number] }>();
-defineSlots<Slots>();
+
+defineSlots<{
+  default: [{ count: number }];
+}>();
 
 const count = ref(0);
 const isMsgNullOrEmpty = computed(() => isNullOrEmpty(msg));
