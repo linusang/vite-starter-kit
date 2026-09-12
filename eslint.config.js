@@ -1,14 +1,13 @@
 import pluginJs from "@eslint/js";
+import { defineConfig, globalIgnores } from "eslint/config";
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import pluginVue from "eslint-plugin-vue";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 
-export default [
-  {
-    ignores: ["**/dist/", "**/node_modules/"],
-  },
+export default defineConfig([
+  globalIgnores(["**/dist/", "**/node_modules/"]),
   { languageOptions: { globals: globals.browser } },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
@@ -26,4 +25,4 @@ export default [
     },
   },
   eslintPluginPrettierRecommended,
-];
+]);

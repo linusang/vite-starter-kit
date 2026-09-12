@@ -15,7 +15,7 @@
     "vue": "^3.5.42"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.5",
+    "@eslint/js": "^10.0.1",
     "@iconify-json/skill-icons": "^1.2.4",
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^22.20.1",
@@ -23,7 +23,7 @@
     "@vue/compiler-dom": "^3.5.42",
     "@vue/compiler-sfc": "^3.5.42",
     "@vue/test-utils": "^2.5.0",
-    "eslint": "^9.39.4",
+    "eslint": "^10.10.0",
     "eslint-config-prettier": "^9.1.2",
     "eslint-plugin-prettier": "^5.5.6",
     "eslint-plugin-simple-import-sort": "^12.1.1",
